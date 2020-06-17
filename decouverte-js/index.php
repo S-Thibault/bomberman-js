@@ -3,14 +3,15 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="./style.css">
-    <script src="script.js" charset="utf-8"></script>
     <title>Plateau-js</title>
   </head>
   <body>
-    <div class="plateau">
+    <div id="plateau">
+      <div id="pion">
     </div>
+  </div>
 
-    <div class="pion">
-    </div>
+        <script src="script.js"></script>
   </body>
 </html>
+
