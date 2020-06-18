@@ -71,4 +71,4 @@ for(var i = 0; i < H_GRID; i++){
   }
 }
 
-blockGrid[10][10].style.backgroundColor = "blue"
+blockGrid[10][10].style.backgroundColor = "blue";
