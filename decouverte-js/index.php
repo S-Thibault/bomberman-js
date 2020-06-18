@@ -6,12 +6,15 @@
     <title>Plateau-js</title>
   </head>
   <body>
-    <div id="plateau">
-      <div id="pion">
+  <div id="plateau">
+
+    <div id="pion">
     </div>
+
+
   </div>
 
-        <script src="script.js"></script>
+  <script src="script.js"></script>
+  <script src="wall.js"></script>
   </body>
 </html>
-
