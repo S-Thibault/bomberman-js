@@ -52,6 +52,7 @@ document.onkeydown = function(event){
   console.log(x , y);
 }
 
+
 var blockGrid = [];
 for(var i = 0; i < H_GRID; i++){
   blockGrid.push([]);
@@ -61,7 +62,7 @@ for(var i = 0; i < H_GRID; i++){
   block.style.height = "40px";
   block.style.display = "flex";
   block.style.position = "absolute";
-  block.style.backgroundColor = "black";
+  if (block.style.backgroundColor = randomColor();
   block.style.marginLeft = (i * GRID_SIZE).toString()+"px";
   block.style.marginTop = (j * GRID_SIZE).toString()+"px";
 
@@ -71,3 +72,12 @@ for(var i = 0; i < H_GRID; i++){
 }
 
 blockGrid[10][10].style.backgroundColor = "blue";
+
+
+function randomColor(){
+return "#" + ((1<<24)*Math.random()|0).toString(16);
+}
+
+function random100() {
+return Math.floor(Math.random() * 100);
+}
