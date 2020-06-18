@@ -62,7 +62,8 @@ for(var i = 0; i < H_GRID; i++){
   block.style.height = "40px";
   block.style.display = "flex";
   block.style.position = "absolute";
-  if (block.style.backgroundColor = randomColor();
+  if (random100() > 90) block.style.backgroundColor = "black";
+  else block.style.backgroundColor = "green";
   block.style.marginLeft = (i * GRID_SIZE).toString()+"px";
   block.style.marginTop = (j * GRID_SIZE).toString()+"px";
 
