@@ -17,36 +17,35 @@ document.onkeydown = function(event){
   var event = event || window.event,
   keyCode = event.keyCode;
 
-  switch(keyCode){
+ switch(keyCode){
     case 38:
-      y = y - 40;
+      y = y - GRID_SIZE;
       if (y < 0){
       y = 0
     }
     break;
 
     case 39:
-      x = x + 40;
-      if (x > 760){
-      x = 760
+      x = x + GRID_SIZE;
+      if (x > WINDOW_WIDTH - GRID_SIZE){
+      x = WINDOW_WIDTH - GRID_SIZE
     }
     break;
 
     case 40:
-      y = y + 40;
-      if (y > 760){
-      y = 760
+      y = y + GRID_SIZE;
+      if (y > WINDOW_HEIGHT - GRID_SIZE){
+      y = WINDOW_HEIGHT - GRID_SIZE
     }
     break;
 
     case 37:
-      x = x - 40;
+      x = x - GRID_SIZE;
       if (x < 0){
       x = 0
     }
     break;
   }
-
 
   s.left = String(x) + 'px';
   s.top = String(y) + 'px';
