@@ -6,11 +6,10 @@
     <title>Plateau-js</title>
   </head>
   <body>
+
   <div id="plateau">
-
-    <div id="pion">
+    <div id="personnage">
     </div>
-
 
   </div>
 
