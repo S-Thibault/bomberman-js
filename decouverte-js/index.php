@@ -7,6 +7,10 @@
   </head>
   <body>
 
+<audio controls="" volume="0.9" id="audio-example-loud" class="audio-example" src="sound/ost.mp3"> You will see this text if native audio playback is not supported. </audio>
+
+
+
     <div id="general">
         <ul id="commandes">
           <img src="img/EVAbackground" alt="">
@@ -26,5 +30,6 @@
 
   <script src="script.js"></script>
   <script src="wall.js"></script>
+    <script src="bombes.js"></script>
   </body>
 </html>
