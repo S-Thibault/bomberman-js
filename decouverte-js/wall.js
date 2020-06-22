@@ -10,7 +10,7 @@ var plateau = document.getElementById('plateau');
 plateau.style.width = WINDOW_WIDTH.toString()+"px";
 plateau.style.height = WINDOW_HEIGHT.toString()+"px";
 plateau.style.border = "64px solid";
-plateau.style.borderbackgroundColor = "black 64 round";
+plateau.style.borderImage = "url('img/map2.png') 29 round";
 
 var blocGrid = [];
 for(var i = 0; i < H_GRID; i++){
@@ -28,16 +28,17 @@ for(var i = 0; i < H_GRID; i++){
 
 
     if (random100() > 80){
-       bloc.className = "brique";
+       bloc.style.backgroundImage = "url('img/arbres.png')"
+       bloc.className = "arbres";
        bloc.traverser = false;
      }
      else if (random100() > 50 && random100() <= 80 ) {
-       bloc.style.backgroundColor = "green";
-       bloc.className = "mur";
+       bloc.style.backgroundImage = "url('img/tower.png')"
+       bloc.className = "tower";
        bloc.traverser = false;
      }
      else {
-       bloc.style.backgroundColor = "red";
+            bloc.style.backgroundImage = "url('img/sol.png')"
        bloc.className = "sol";
        bloc.traverser = true;
      }
