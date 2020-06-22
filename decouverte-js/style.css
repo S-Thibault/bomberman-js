@@ -1,3 +1,7 @@
+html {
+  background-color: "black";
+}
+
 #plateau {
     position: relative;
     margin-right: 0;
@@ -16,4 +20,29 @@
     background-position: center;
     top: 0px;
     left: 0px;
+  }
+  #commandes {
+  margin-top: 1rem;
+  }
+
+  #commandes img {
+    height: auto;
+  }
+
+  #general {
+    display: flex;
+    flex-direction: row;
+    font-size: 3rem;
+  }
+
+  #commandes h3 {
+    text-decoration: underline;
+    text-transform: capitalize;
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+
+
+  #commandes li {
+     list-style-type: none;
   }
