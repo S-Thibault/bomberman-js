@@ -7,7 +7,7 @@
   </head>
   <body>
 
-<audio controls="" volume="0.9" id="audio-example-loud" class="audio-example" src="sound/ost.mp3"> You will see this text if native audio playback is not supported. </audio>
+<audio controls="" volume="0.1" id="audio-example-low" class="audio-example" src="sound/ost.mp3"> You will see this text if native audio playback is not supported. </audio>
 
 
 
