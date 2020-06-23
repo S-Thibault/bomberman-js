@@ -1,5 +1,9 @@
 html {
-  background-color: "black";
+  background-image:url("img/fond4.jpg") ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
 }
 
 #plateau {
@@ -21,18 +25,16 @@ html {
     top: 0px;
     left: 0px;
   }
+
   #commandes {
   margin-top: 1rem;
-  }
-
-  #commandes img {
-    height: auto;
   }
 
   #general {
     display: flex;
     flex-direction: row;
     font-size: 3rem;
+    color: #FFFFFF;
   }
 
   #commandes h3 {
