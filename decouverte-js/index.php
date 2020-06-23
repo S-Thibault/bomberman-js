@@ -7,13 +7,13 @@
   </head>
   <body>
 
-<audio controls="" volume="0.1" id="audio-example-low" class="audio-example" src="sound/ost.mp3"> You will see this text if native audio playback is not supported. </audio>
 
+<audio controls="" volume="0.1" id="audio-example-low" class="audio-example" src="sound/ost.mp3"> You will see this text if native audio playback is not supported. </audio>
 
 
     <div id="general">
         <ul id="commandes">
-          <img src="img/EVAbackground" alt="">
+          <img src="img/3.png" alt="">
           <h3> Commandes </h3>
           <li> &#x21E7; : Haut</li>
           <li> &#x21E9; : Bas</li>
