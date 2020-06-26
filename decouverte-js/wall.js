@@ -58,3 +58,4 @@ function randomColor(){
 function random100() {
   return Math.floor(Math.random() * 100);
 }
+4
