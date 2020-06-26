@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-!DOCTYPE html>
-<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="./style.css">
@@ -26,19 +24,19 @@
 
   <div id="plateau">
     <div id="personnage">
-      
+
     </div>
-    
-      <div id="vilain">
-   
+
+      <div id="monstre">
+
       </div>
   </div>
 
   <script src="script.js"></script>
   <!-- <script src="EVA-01.js"></script>-->
   <script src="wall.js"></script>
+  <script src="monstre.js"></script>
   <script src="bombes.js"></script>
 
   </body>
 </html>
-
