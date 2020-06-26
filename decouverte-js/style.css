@@ -15,14 +15,15 @@ html {
 
   #personnage {
     position: absolute;
+    background-image: "url('img/EVA-01-01.png')";
     width: 40px;
     height: 40px;
     z-index: 50;
     top: 0px;
     left: 0px;
   }
-  
-  #vilain{
+
+  #monstre{
     width: 40px;
     height: 40px;
     position: absolute;
@@ -32,7 +33,7 @@ html {
     top : 0;
     z-index: 95;
   }
-  
+
   #commandes {
   margin-top: 1rem;
   }
