@@ -1,4 +1,4 @@
-var monstre = [];
+var monstres = [];
 for (var i = 0; i < 10; i++) {
   let monstre = document.createElement("div");
 
@@ -21,14 +21,15 @@ for (var i = 0; i < 10; i++) {
   monstre.style.backgroundRepeat = "no-repeat";
   monstre.style.backgroundSize = "contain";
   monstre.style.backgroundPosition = "center";
-  monstre.style.backgroundImage = "url('EVA-01-01')";
-  monstre.style.zIndex = "95";
+  monstre.style.backgroundColor = "yellow";
+  monstre.style.zIndex = "100";
   monstre.id = "monstre" + String(i);
   monstre.style.left = String(monstre.monstreX * GRID_SIZE) + "px";
   monstre.style.top = String(monstre.monstreY * GRID_SIZE) + "px";
   plateau.appendChild(monstre);
-  monstre.push(monstre);
+  monstres.push(monstre);
 }
+
 
 var frame = 0;
 
@@ -38,8 +39,8 @@ function rondemonstre() {
 
     for (var i = 0; i < monstres.length; i++) {
       let monstre = monstres[i];
-      let monstreX = monstre.gardeX;
-      let monstreY = monstre.gardeY;
+      let monstreX = monstre.monstreX;
+      let monstreY = monstre.monstreY;
       let direction = monstre.direction;
       blocGrid[monstreX][monstreY].traverser = true;
 
@@ -86,7 +87,7 @@ function rondemonstre() {
       }
 
       monstre.monstreX = monstreX;
-      monstre.gardeY = monstreY;
+      monstre.monstreY = monstreY;
       monstre.direction = direction;
       blocGrid[monstreX][monstreY].traverser = false;
     }
