@@ -87,4 +87,3 @@ function creationBombes(blocGrid) {
   document.getElementById("bombe").remove();
   }
   }
-
