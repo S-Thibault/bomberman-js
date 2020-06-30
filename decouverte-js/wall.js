@@ -2,7 +2,6 @@ const H_GRID = 20;
 const V_GRID = 20;
 const GRID_SIZE = 40;
 
-
 const WINDOW_WIDTH = H_GRID * GRID_SIZE;
 const WINDOW_HEIGHT = V_GRID * GRID_SIZE;
 
@@ -27,12 +26,12 @@ for(var i = 0; i < H_GRID; i++){
     bloc.style.backgroundPosition = "center";
 
 
-    if (random100() > 80){
+    if (random100() > 85 && /* Exclusion des positions ci-après pour le random */ !(i >= 0 && i <= 1 && j >= 0 && j <= 1 || i >= (H_GRID - 2)  && i < H_GRID && j >= 0 && j <= 1 || i >= 0  && i <= 1 && j >= (V_GRID - 2) && j < V_GRID || i >= (H_GRID - 2) && i < H_GRID && j >= (V_GRID - 2) && j < V_GRID)) {
        bloc.style.backgroundImage = "url('img/arbres.png')"
        bloc.className = "arbres";
        bloc.traverser = false;
      }
-     else if (random100() > 50 && random100() <= 80 ) {
+     else if (random100() > 60 && random100() <= 85 && /* Exclusion des positions ci-après pour le random */ !(i >= 0 && i <= 1 && j >= 0 && j <= 1 || i >= (H_GRID - 2)  && i < H_GRID && j >= 0 && j <= 1 || i >= 0  && i <= 1 && j >= (V_GRID - 2) && j < V_GRID || i >= (H_GRID - 2) && i < H_GRID && j >= (V_GRID - 2) && j < V_GRID)) {
        bloc.style.backgroundImage = "url('img/tower.png')"
        bloc.className = "tower";
        bloc.traverser = false;
@@ -50,6 +49,8 @@ for(var i = 0; i < H_GRID; i++){
      blocGrid[i].push(bloc);
   }
 }
+
+
 
 function randomColor(){
   return "#" + ((1<<24)*Math.random()|0).toString(16);
