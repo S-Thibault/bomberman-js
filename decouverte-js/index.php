@@ -26,15 +26,14 @@
     <div id="personnage">
 
     </div>
-
-     
   </div>
 
   <script src="script.js"></script>
-  <!-- <script src="EVA-01.js"></script>-->
+  <script src="EVA-01.js"></script>
   <script src="wall.js"></script>
-  <script src="monstre.js"></script>
   <script src="bombes.js"></script>
-
+  <script src="monstre.js"></script>
+      
+      
   </body>
 </html>
