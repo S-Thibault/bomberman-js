@@ -27,9 +27,7 @@
 
     </div>
 
-      <div id="monstre">
-
-      </div>
+     
   </div>
 
   <script src="script.js"></script>
