@@ -27,11 +27,13 @@ function startAnimationgauche() {
     //reset the position to show first sprite after the last one
   }, speed);
   setTimeout(stopAnimation, 400);
+
 }
 
 //Start animation
 
 // startAnimation();
+
 const EVA01 = document.querySelectorAll("personnage");
 
 let imagesPersonnage = [];
@@ -43,13 +45,7 @@ imagesPersonnage.push("url('img/animation/EVA-01-05.png')");
 imagesPersonnage.push("url('img/animation/EVA-01-06.png')");
 imagesPersonnage.push("url('img/animation/EVA-01-07.png')");
 imagesPersonnage.push("url('img/animation/EVA-01-08.png')");
-imagesPersonnage.push("url('img/animation/EVA-01-07.png')");
-imagesPersonnage.push("url('img/animation/EVA-01-06.png')");
-imagesPersonnage.push("url('img/animation/EVA-01-05.png')");
-imagesPersonnage.push("url('img/animation/EVA-01-04.png')");
-imagesPersonnage.push("url('img/animation/EVA-01-03.png')");
-imagesPersonnage.push("url('img/animation/EVA-01-02.png')");
-imagesPersonnage.push("url('img/animation/EVA-01-01.png')");
+
 
 let iPersonnage = 0;
 
