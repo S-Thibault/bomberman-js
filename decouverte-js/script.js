@@ -30,6 +30,7 @@ var personnageADeplacer = document.getElementById('personnage'),
      creationBombes();
      break;    
   }
+    
   personnageADeplacer.style.left = String(x) + 'px';
   personnageADeplacer.style.top = String(y) + 'px';
 }
