@@ -14,6 +14,7 @@ var personnageADeplacer = document.getElementById('personnage'),
     case 39: // touche "Flèche Droite"
       if (x < WINDOW_WIDTH && blocGrid[x / GRID_SIZE +1][y / GRID_SIZE].traverser)
       x = x + GRID_SIZE;
+      personnage.style.backgroundImage = "url('img/04.gif')";
       break;
 
     case 40: // touche "Flèche Bas"
@@ -24,13 +25,19 @@ var personnageADeplacer = document.getElementById('personnage'),
     case 37: // touche "Flèche Gauche"
       if (x > 0 && blocGrid[x / GRID_SIZE -1][y / GRID_SIZE].traverser)
       x = x - GRID_SIZE;
+        personnage.style.backgroundImage = "url('img/03.gif')";
       break;
-        
-    case 32 :
-     creationBombes();
-     break;    
-  }
-    
+
+      case 32 :
+      if (!blocGrid[x / GRID_SIZE][y / GRID_SIZE].bombe) {
+              creationBombes(blocGrid);
+            }
+            break;
+
+          default: return;
+}
+
+
   personnageADeplacer.style.left = String(x) + 'px';
   personnageADeplacer.style.top = String(y) + 'px';
 }
