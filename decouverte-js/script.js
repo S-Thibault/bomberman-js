@@ -25,6 +25,10 @@ var personnageADeplacer = document.getElementById('personnage'),
       if (x > 0 && blocGrid[x / GRID_SIZE -1][y / GRID_SIZE].traverser)
       x = x - GRID_SIZE;
       break;
+        
+    case 32 :
+     creationBombes();
+     break;    
   }
   personnageADeplacer.style.left = String(x) + 'px';
   personnageADeplacer.style.top = String(y) + 'px';
