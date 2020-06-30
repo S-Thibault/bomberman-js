@@ -30,11 +30,11 @@ var personnageADeplacer = document.getElementById('personnage'),
 
       case 32 :
       if (!blocGrid[x / GRID_SIZE][y / GRID_SIZE].bombe) {
-              creationBombes(blocGrid);
-            }
-            break;
+                 creationBombes(blocGrid);
+               }
+               break;
 
-          default: return;
+             default: return;
 }
 
 
