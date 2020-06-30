@@ -1,3 +1,37 @@
+var animationInterval;
+var spriteSheet = document.getElementById("personnage");
+var widthOfSpriteSheet = 415;
+var widthOfEachSprite = 40;
+var heightOfSpriteSheet = 48;
+var heightOfEachSprite = 40;
+
+function stopAnimation() {
+  clearInterval(animationInterval);
+}
+
+function startAnimationgauche() {
+  stopAnimation();
+  var position = widthOfEachSprite; //start position for the image
+  const speed = 100; //in millisecond(ms)
+  const diff = widthOfEachSprite; //difference between two sprites
+
+  animationInterval = setInterval(() => {
+    spriteSheet.style.backgroundPosition = `-${position}px 0px`;
+
+    if (position < widthOfSpriteSheet) {
+      position = position + diff;
+    } else {
+      //increment the position by the width of each sprite each time
+      position = widthOfEachSprite;
+    }
+    //reset the position to show first sprite after the last one
+  }, speed);
+  setTimeout(stopAnimation, 400);
+}
+
+//Start animation
+
+// startAnimation();
 const EVA01 = document.querySelectorAll("personnage");
 
 let imagesPersonnage = [];
